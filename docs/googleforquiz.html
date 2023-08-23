@@ -198,6 +198,7 @@
 <ul>
 <li><div><a href="#事前準備">事前準備</a><i></i></div></li>
 <li><div><a href="#試験作成">試験作成</a><i></i></div></li>
+<li><div><a href="#excelで問題を作成・管理する">Excelで問題を作成・管理する</a><i></i></div></li>
 <li><div><a href="#試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用">試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用</a><i></i></div></li>
 </ul></li>
 </ul>
@@ -237,10 +238,20 @@
 <p><img src="image_quiz/makequiz07.png" alt="実行完了の確認"><br>７：試験は、あなたの「マイドライブ」に作成されます。ダブルクリックして試験を開き、確認しましょう<br>※マイドライブは<a href="https://drive.google.com/drive/my-drive" target="_blank">こちら</a>。もうブックマークしておきましょう<br>※試験の名前は、スプレッドシートのB1セルに入れたものになっています<br>※試験を開くと、学年組番号氏名入力ゾーンの更に下に、あなたが入力して作った問題があります  </p>
 <p><img src="image_quiz/makequiz08.png" alt="（推奨）試験返却の手間を省く設定に変更"><br>８（推奨）：試験が正常に作成されているのを確認したら、「設定」タブをクリック  ⇒「成績の発表」を「送信直後」に、「不正解だった質問」「正解」「点数」をオンにするとよいでしょう<br>※必須の操作ではありませんが、試験返却の手間が省けるので推奨します<br>※ここの設定は、どうも自動ではできないみたいです。なので手動でお願いします  </p>
 <p><img src="image_quiz/makequiz09.png" alt="URLの送信"><br>９：右上の「送信」、続いて知恵の輪マーク、そして「コピー」を順番にクリック。後は、コピーしたURLを生徒に教えれば、生徒は試験を受けられます<br>※コピーしたURLを生徒に教える方法は何でも構いません。メールでも、LINE（かLINEに類似したチャットツール）でも、QRコードでも、ロイロノートのwebカードも…  </p>
+<h3 id="excelで問題を作成・管理する">Excelで問題を作成・管理する</h3>
+<p>・ところで。恐らくですが、大抵の人は普段、googleスプレッドシートではなくExcelで仕事をしています<br>・なので大抵は、「問題の打ち込みはExcelでやる」「googleフォームの試験を作る時だけ、スプレッドシートを使用」の方がいいでしょう<br>・という訳で、Excelをご用意してあります  </p>
+<p><a href="https://docs.google.com/spreadsheets/d/1e0a8Bx3aolfAFXg3y4bVKLTXc1bhJ8Lt/copy" target="_blank">１：こちらの文章をクリックし、「ドキュメントのコピー」をクリック</a><br>※クリックした後、スプレッドシートが開きますが閉じてください  </p>
+<p><img src="image_quiz/excel01.png" alt="エクセルファイルのダウンロード"><br>２：<a href="https://drive.google.com/drive/my-drive" target="_blank">マイドライブ</a>にテンプレファイルが作成されるので、右クリック⇒ダウンロード  </p>
+<p><img src="image_quiz/excel02.png" alt><br>３：あなたのＰＣにexcelファイルがダウンロードされる（windows10や11なら「ダウンロード」フォルダに保存されます）ので、適宜問題を作成  </p>
+<p><img src="image_quiz/excel03.png" alt><br>４：試験を作成する時は、excelで作成した問題を、「google form小テスト作成お助け機」のA7セルにコピー＆ペーストしてください  </p>
 <h3 id="試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用">試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用</h3>
 <p>・ところで、これから「googleフォームで小テストをやろう！！」という話を自分の学校でしたい皆さん<br>・こんなことを言う同僚が出てくる可能性を心配していませんか？<br>・「小テストの情報の漏洩が気になる」「紙の試験なら生徒の記憶だけが頼りだけど、生徒のタブレットとか携帯で試験となると…」  </p>
 <p><img src="image_quiz/randomize00.png" alt="うるせ～～～～！！！"><br><a href="https://twitter.com/nmnoy/status/904540273358684164" target="_blank">※元ネタはコチラ</a>  </p>
 <p>・…と言う訳にもいかないので、何か説得材料が必要な訳ですが…<br>・そんな時オススメしたいのが、「20問作ってクラスごとに10問をランダム出題」メソッドです<br>・「とにかく問題を多めに作って」「クラスや実施日ごとにランダム出題する」というやり方を提案すると、概ね通ります<br>・そのための機能もご用意してあります。以下で使い方を解説します  </p>
+<p><img src="image_quiz/randomize01.png" alt="ランダム出題用タブ"><br>１：「google form小テスト作成お助け機」は、下の方をよく見ると「ランダム出題用」があります。そちらをクリック  </p>
+<p><img src="image_quiz/randomize02.png" alt="入力"><br>２：B1セルに出題数を入力します。また、3行目以降に問題データを入力します。excelで問題を作って、A3にコピペするのが丸いでしょう  </p>
+<p><img src="image_quiz/randomize02b.png" alt="入力例"><br>入力例：今回は15問作って10問ランダム出題する事にしました。なのでB1セルに「10」が、3行目以降には15行分の問題データが入力されています  </p>
+<p><img src="image_quiz/randomize03.png" alt="入力例"><br>３：「拡張機能」をクリック、更に「Apps Script」をクリック<br>※「Apps Script」をクリックすると新しいタブが開かれて、↓のような画面になります  </p>
 
                                 
                                 </section>
@@ -276,7 +287,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"小テスト労力削減プロジェクト","level":"2.1","depth":1,"previous":{"title":"雨坂先生の復習用資料　表紙","level":"1.2","depth":1,"url":"https://teacheramesaka.github.io/studyfiles/","ref":"https://teacheramesaka.github.io/studyfiles/","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gitbook-plugin-page-treeview","gitbook-plugin-collapsible-chapters","gitbook-plugin-folding-content"],"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"gitbook-plugin-folding-content":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"gitbook-plugin-collapsible-chapters":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"gitbook-plugin-page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"googleforquiz.md","mtime":"2023-08-23T04:28:18.853Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-23T04:28:44.165Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"小テスト労力削減プロジェクト","level":"2.1","depth":1,"previous":{"title":"雨坂先生の復習用資料　表紙","level":"1.2","depth":1,"url":"https://teacheramesaka.github.io/studyfiles/","ref":"https://teacheramesaka.github.io/studyfiles/","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gitbook-plugin-page-treeview","gitbook-plugin-collapsible-chapters","gitbook-plugin-folding-content"],"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"gitbook-plugin-folding-content":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"gitbook-plugin-collapsible-chapters":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"gitbook-plugin-page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"googleforquiz.md","mtime":"2023-08-23T06:24:31.882Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-23T06:39:23.949Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
