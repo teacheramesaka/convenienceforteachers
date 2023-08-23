@@ -1,0 +1,10 @@
+{
+    "plugins": ["gitbook-plugin-page-treeview", "gitbook-plugin-collapsible-chapters", "gitbook-plugin-folding-content"],
+    "pluginsConfig": {
+        "page-treeview": {
+            "copyright": "",
+            "minHeaderCount": "2",
+            "minHeaderDeep": "2"
+        }
+    }
+}

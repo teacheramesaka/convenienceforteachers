@@ -1,0 +1,20 @@
+{
+  "name": "convenienceforteachers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "honkit": "^5.0.0"
+  },
+  "dependencies": {
+    "gitbook-plugin-collapsible-chapters": "^0.1.8",
+    "gitbook-plugin-folding-content": "^1.0.0",
+    "gitbook-plugin-page-treeview": "^3.0.6"
+  }
+}
