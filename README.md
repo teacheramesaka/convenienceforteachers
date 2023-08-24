@@ -1,1 +1,4 @@
-# convenienceforteachers
+# 教員向け便利ファイル集
+## このサイト何？
+・[雨坂先生](https://twitter.com/teacheramesaka)が作ったり作らなかったりした、教員向けの便利な色々をまとめています
+・今あるのは[小テスト労力削減プロジェクト](googleforquiz.md)だけですが、これもめっちゃくちゃ便利なので試してみてください
