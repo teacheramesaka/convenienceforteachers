@@ -201,6 +201,7 @@
 <li><div><a href="#excelで問題を作成・管理する">Excelで問題を作成・管理する</a><i></i></div></li>
 <li><div><a href="#試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用">試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用</a><i></i></div></li>
 </ul></li>
+<li><div><a href="#成績確認＆処理の手引き">成績確認＆処理の手引き</a><i></i></div></li>
 </ul>
 </div>
 
@@ -252,6 +253,26 @@
 <p><img src="image_quiz/randomize04.png" alt="入力例"><br>４：「デバッグ」の右が「randomize」になっている事を確認して（そうなっていない場合はクリックして、「randomize」を選んで）、「実行」をクリック  </p>
 <p><img src="image_quiz/randomize05.png" alt="入力例"><br>５：実行完了後、googleスプレッドシートの「google form小テスト作成お助け機」の設定タブに、指定した数の問題がランダム出題されています。確認してみましょう  </p>
 <p><img src="image_quiz/makequiz03.png" alt="GASを実行"><br>７：後はApps Scriptに戻って、createFormを実行すればOKです！  </p>
+<h2 id="成績確認＆処理の手引き">成績確認＆処理の手引き</h2>
+<p>・googleフォームで実施した小テストは、自動で採点されています<br>・ところで、今時の教員は大抵、excelファイルで生徒の成績を管理していますね？  </p>
+<p><img src="image_quiz/result00.png" alt="成績編集エクセル例">  </p>
+<p>・↑こういうexcelファイル作って、成績管理してるのが普通ですよね？<br>・という訳で、googleフォームで実施した試験の成績を、↑こういうexcelファイルへ簡単に移植する方法を紹介します<br>※教務手帳に点数をメモって手計算してる人も、やり方は基本同じです  </p>
+<p>・PCでgoogleドライブを開いて、自分の試験が置いてあるフォルダを見るところから手順紹介を始めます<br>※【定期】マイドライブであれば<a href="https://drive.google.com/drive/my-drive" target="_blank">こちら</a>  </p>
+<p><img src="image_quiz/result01.png" alt="googleドライブで開く"><br>１：点数を確認したい試験を開きます（ダブルクリックで開きます）  </p>
+<p><img src="image_quiz/result02.png" alt="回答タブでスプレッドシート作成"><br>２：試験が開かれたら、「回答」タブをクリックし、「スプレッドシートにリンク」をクリック（緑地に白のスカンジナビア十字のやつ）<br>※「回答」タブを押すと、画像で示したところに平均点や誤答の多い問題の分析等が出ます。こちらも便利ですが、今回は個別の成績をexcelにコピペするのが最終目標なので、使いません。決断的にスプレッドシートにリンクしてください</p>
+<p><img src="image_quiz/result03.png" alt="新しいスプレッドシートを作成ポップアップ"><br>３：こんなポップアップが出るので、「新しいスプレッドシートを作成」を選んで「作成」をクリック  </p>
+<p><img src="image_quiz/result04.png" alt="表示例"><br>４：こんな画面になります。左から<br>タイムスタンプ：回答を送信した日時。URL控えておいて後日送った不届き者はここから分かります<br>スコア：点数です<br>学年クラス番号姓名：誰の回答かの判断に使います<br>Gより右：その問題の答えとしてどれを選んだかが載ってます  </p>
+<p><img src="image_quiz/result05.png" alt="表示例"><br>５：出席番号順に並べ替えましょう。出席番号はEの列なので、Eをクリックしてから青くなったフィールド上で右クリックして、「昇順でシートを並べ替え」をクリックします</p>
+<p><img src="image_quiz/result05b.png" alt="並べ替え後例"><br>※尚、複数のクラスで同じ試験を実施した場合は、並べ替え操作をD列とE列で交互にやってください。その内こんな風に組番号順になります<br>※教務手帳にメモる派の人は、基本ここまでです。後は頑張ってメモって、手計算してください。でもこの際だからexcel導入してみては…？</p>
+<p><img src="image_quiz/result06.png" alt="並べ替え後例"><br>６：ここで、新しいexcelファイル（もしくはexcelシート）を作ってAをクリック、色が変わったフィールドで右クリック。「セルの書式設定」をクリック<br>※成績をエクセルファイルとかで管理する時、ほしい点数の表記は「7 / 10」じゃなくて「7」ですよね。ここからはそのための作業です  </p>
+<p><img src="image_quiz/result07.png" alt="並べ替え後例"><br>７：「文字列」をクリックして「OK」  </p>
+<p><img src="image_quiz/result08.png" alt="エクセルシートに貼り付け"><br>８：先程の成績一覧スプレッドシートに戻り、点数をコピーし、さっきのエクセルのA列に貼り付けます
+※A1セルを右クリック→「貼り付けのオプション」で「貼り付け先の書式に合わせる」を選ぶとよいでしょう</p>
+<p><img src="image_quiz/result09.png" alt="置換ウィンドウを開く"><br>９：またAをクリックしてから、「ホーム」タブが選択されている状態の右上にある「検索と置換」をクリックし、「置換」をクリック<br>※もしくはAをクリックしてから、CTRLキー+Fキー→「置換」をクリック  </p>
+<p><img src="image_quiz/result10.png" alt="置換する"><br>１０：「検索する文字列」に「 / 10」（半角スペース、半角スラッシュ、半角スペース、半角数字で１０）を入力。「置換後の文字列」が空白になっているのを確認して「全て置換」をクリック
+※10点満点の場合。20点満点なら数字のところは20、30点満点なら30を入力します</p>
+<p><img src="image_quiz/result11.png" alt="置換する"><br>１１：うーんマンダム。後は自分のexcelファイルに貼り付ければ…</p>
+<p><img src="image_quiz/result12.png" alt="置換する"><br>１２：これにて処理完了です</p>
 
                                 
                                 </section>
@@ -287,7 +308,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"小テスト労力削減プロジェクト","level":"2.1","depth":1,"previous":{"title":"雨坂先生の復習用資料　表紙","level":"1.2","depth":1,"url":"https://teacheramesaka.github.io/studyfiles/","ref":"https://teacheramesaka.github.io/studyfiles/","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gitbook-plugin-page-treeview","gitbook-plugin-collapsible-chapters","gitbook-plugin-folding-content"],"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"gitbook-plugin-folding-content":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"gitbook-plugin-collapsible-chapters":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"gitbook-plugin-page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"googleforquiz.md","mtime":"2023-08-23T06:56:11.268Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-23T06:56:19.227Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"小テスト労力削減プロジェクト","level":"2.1","depth":1,"previous":{"title":"雨坂先生の復習用資料　表紙","level":"1.2","depth":1,"url":"https://teacheramesaka.github.io/studyfiles/","ref":"https://teacheramesaka.github.io/studyfiles/","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gitbook-plugin-page-treeview","gitbook-plugin-collapsible-chapters","gitbook-plugin-folding-content"],"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"gitbook-plugin-folding-content":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"gitbook-plugin-collapsible-chapters":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"gitbook-plugin-page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"googleforquiz.md","mtime":"2023-08-24T05:45:29.710Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-24T05:45:44.806Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
