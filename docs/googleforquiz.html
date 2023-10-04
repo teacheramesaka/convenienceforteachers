@@ -190,6 +190,7 @@
                                 <div class="treeview__container"><ul>
 <li><div><a href="#概要">概要</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
 <ul>
+<li><div><a href="#更新履歴">更新履歴</a><i></i></div></li>
 <li><div><a href="#前説">前説</a><i></i></div></li>
 <li><div><a href="#そこで！　皆さん、機械の力を使って労力を削減しませんか！！">そこで！　皆さん、機械の力を使って労力を削減しませんか！！</a><i></i></div></li>
 <li><div><a href="#注意事項等">注意事項等</a><i></i></div></li>
@@ -202,12 +203,19 @@
 <li><div><a href="#試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用">試験情報漏洩を心配する人向け機能（ランダム出題機能）の使用</a><i></i></div></li>
 </ul></li>
 <li><div><a href="#成績確認＆処理の手引き">成績確認＆処理の手引き</a><i></i></div></li>
+<li><div><a href="#ｐｃの操作がそれなりにできる人向け情報">ＰＣの操作がそれなりにできる人向け情報</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#ｐｃの操作がそれなりにできる人向け情報　その１">ＰＣの操作がそれなりにできる人向け情報　その１</a><i></i></div></li>
+<li><div><a href="#ｐｃの操作がそれなりにできる人向け情報　その２">ＰＣの操作がそれなりにできる人向け情報　その２</a><i></i></div></li>
+</ul></li>
 </ul>
 </div>
 
 <h1 id="小テスト労力削減プロジェクト">小テスト労力削減プロジェクト</h1>
 <h2 id="概要">概要</h2>
-<p>Q：OKグーグル、三行でまとめて<br>A：小テストの実施がクソ楽になるシステム（？）を作ったからみんな使ってみて♡  </p>
+<p>Q：OKグーグル、三行でまとめて<br>A：<a href="https://docs.google.com/spreadsheets/d/1s9_LWIf5J94E5uxImTizUMgsUC_8fi7VaLUch8npO7w/copy" target="_blank">小テストの実施がクソ楽になるシステム（？）</a>を作ったからみんな使ってみて♡  </p>
+<h3 id="更新履歴">更新履歴</h3>
+<p>R05/10/1：ver1.11：randomize機能で、「設定」シート7行目以降の情報を消去してから貼り付けをするように変更<br>R05/9/28：ver1.10：createForm機能の全面改修とバグ取り（フィードバックが正しく適用されないバグの修正）<br>R05/8/24：ver1.00：基本機能完成。公開  </p>
 <h3 id="前説">前説</h3>
 <p>・令和五年現在、学習指導要領の改訂が続いています<br>・その結果として（特に中高の）現場の先生方には、小テスト実施の圧力が強まっています<br>・毎週、何なら毎授業で小テストをやれ、と言われているような状態です<br>・言うまでもなく、これはとんでもない負担です<br>⇒仮に「週３時間の授業を６クラス持っている」「１クラス３０人」として、毎週小テスト実施するだけで毎週１８０人ぶんの答案を採点する事になります。教員の過重労働が問題になっているこの時代に、無茶言うなバカタレという話で…  </p>
 <h3 id="そこで！　皆さん、機械の力を使って労力を削減しませんか！！">そこで！　皆さん、機械の力を使って労力を削減しませんか！！</h3>
@@ -218,10 +226,10 @@
 <p>４：小テストが<strong>自動採点</strong>される（googleフォームの標準機能）<br>５：成績を<strong>学年組番号順に並べ替え</strong>できる（googleスプレッドシートの標準機能）<br>６：アンケート作成にも対応（小テストだけでなくアンケートも、excelやgoogleスプレッドシートで作成できる）  </p>
 <h3 id="注意事項等">注意事項等</h3>
 <p>・なお、本プロジェクトでは選択肢式の小テストのみ対応しています<br>・記述問題は正解が沢山できてしまうので、機械による自動採点とは極めて相性が悪いです  </p>
-<p>例１：薩長同盟の立役者とされており、また海援隊を作ったとされるのは？<br>⇒坂本龍馬だけど坂本竜馬でもいいし、何なら本名は坂本直陰もしくは坂本直柔だし…  </p>
+<p>例１：薩長同盟の立役者とされており、また海援隊を作ったとされるのは？<br>⇒坂本龍馬だけど坂本竜馬でもいいし、何なら、本来は坂本直陰もしくは坂本直柔って表記した方がいい人だし…  </p>
 <p>例２：現在、デンマーク王国がある半島の名前は？<br>⇒ドイツ語ならユートラント半島だし、英語ならジェットランド半島だし、日本では両者が混ざったユトランド半島って呼ばれてるし…なんならﾕﾄﾗﾝﾄﾞ半島って表記してもいい訳で……  </p>
 <p>・そういうのもあって、小テストでは選択肢式の採用を強く推奨します<br>⇒そもそも小テストは、授業時間を圧迫しないよう数分で終わらせるのが理想ですし… 「漢字を書かせたい」がある科目、例えば日本史でも、期末試験でやればいいだけだし……  </p>
-<p>・また、今回作成したものは、<a href="https://gasgas.itokeisuke.jp/gas/177/" target="_blank">こちらの記事</a>を読みながら勉強し、その後、<a href="https://chat.openai.com/auth/login" target="_blank">ChatGPT先生</a>にほとんど作ってもらいました。厚くお礼申し上げます</p>
+<p>・また、今回作成したものは、<a href="https://gasgas.itokeisuke.jp/gas/177/" target="_blank">こちらの記事</a>を読みながら勉強し、その後、<a href="https://chat.openai.com/auth/login" target="_blank">ChatGPT</a>先生と協力しながら作りました。ここにお礼を申し上げます</p>
 <h2 id="本プロジェクトの使用方法">本プロジェクトの使用方法</h2>
 <h3 id="事前準備">事前準備</h3>
 <p><img src="image_quiz/install01.png" alt="↓のリンクをクリックした後。んで「ドキュメントのコピー」をクリックしてください">  </p>
@@ -275,6 +283,27 @@
 ※10点満点の場合。20点満点なら数字のところは20、30点満点なら30を入力します</p>
 <p><img src="image_quiz/result11.png" alt="置換する"><br>１１：うーんマンダム。後は自分のexcelファイルに貼り付ければ…</p>
 <p><img src="image_quiz/result12.png" alt="置換する"><br>１２：これにて処理完了です</p>
+<h2 id="ｐｃの操作がそれなりにできる人向け情報">ＰＣの操作がそれなりにできる人向け情報</h2>
+<h3 id="ｐｃの操作がそれなりにできる人向け情報　その１">ＰＣの操作がそれなりにできる人向け情報　その１</h3>
+<p>・今回私が作ったスプレッドシート、実は3～6行目が隠れています
+・実は、ここに「あなたの学年は？」「あなたの姓名は？」系の質問を突っ込んでいます</p>
+<p><img src="image_quiz/forexpert01.png" alt>
+よく見ると、2行目の7行目の間に謎の▲や▼が表示されています。これをクリックすると…</p>
+<p><img src="image_quiz/forexpert02.png" alt>
+この通り、隠れていた3行が出てきました。ここで学年学級姓名を聞いていたんですね</p>
+<p>・もし必要であれば、この3行を書き換えるのもいいでしょう
+・例えば学級と出席番号の代わりに学籍番号を聞くとか、そういう事もできるでしょう</p>
+<p>・但しこの手の質問を、7行目以降に拡張するのはやめた方がいいでしょう
+※先に紹介したfunction randomizeが「「設定」シートの7行目以降を削除する」「「ランダム出題用」シートから持ってきたデータを「設定」シートの7行目以降に貼り付ける」という挙動をするため。もしそこを書き換えたい場合は、拡張機能⇒apps scriptでコードを開いて、randomizeのコードを弄ってください</p>
+<p><img src="image_quiz/forexpert03.png" alt>
+apps scriptのfunction randomizeの、この辺を弄れば目的は達されます</p>
+<h3 id="ｐｃの操作がそれなりにできる人向け情報　その２">ＰＣの操作がそれなりにできる人向け情報　その２</h3>
+<p>・今回私が（chatgptにお願いして）作ったスクリプトは、割と簡単に弄れるようにしています<br>・人並み以上にＰＣ操作ができる人であれば、自分にとって便利なように一部書き換えて使えると思います  </p>
+<p><img src="image_quiz/forexpert04.png" alt>
+apps scriptのfunction randomizeの、この辺を弄れば目的は達されます
+「google form小試験作成お助け機」を開き、App Scriptを開いてみましょう。行頭に「//」がついているのがコメントです。その行にどのような命令が書いてあるか、解説しています</p>
+<p><img src="image_quiz/forexpert05.png" alt>
+この辺りを弄ると、作成されるgoogleフォームの設定を変えられます。「うちではメールを収集している」とか「うちでは回答を１回に制限する形で小テストやってる」とかあれば、ここを弄れば、毎回設定タブから設定しなおす手間が省けます</p>
 
                                 
                                 </section>
@@ -310,7 +339,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"小テスト労力削減プロジェクト","level":"2.1","depth":1,"previous":{"title":"雨坂先生の復習用資料　表紙","level":"1.2","depth":1,"url":"https://teacheramesaka.github.io/studyfiles/","ref":"https://teacheramesaka.github.io/studyfiles/","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gitbook-plugin-page-treeview","gitbook-plugin-collapsible-chapters","gitbook-plugin-folding-content"],"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"gitbook-plugin-folding-content":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"gitbook-plugin-collapsible-chapters":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"gitbook-plugin-page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"googleforquiz.md","mtime":"2023-08-24T09:08:54.511Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-24T11:12:17.168Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"小テスト労力削減プロジェクト","level":"2.1","depth":1,"previous":{"title":"雨坂先生の復習用資料　表紙","level":"1.2","depth":1,"url":"https://teacheramesaka.github.io/studyfiles/","ref":"https://teacheramesaka.github.io/studyfiles/","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gitbook-plugin-page-treeview","gitbook-plugin-collapsible-chapters","gitbook-plugin-folding-content"],"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"gitbook-plugin-folding-content":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"gitbook-plugin-collapsible-chapters":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"gitbook-plugin-page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1","collapsed":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"googleforquiz.md","mtime":"2023-10-04T01:53:51.452Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-10-04T01:54:17.310Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
