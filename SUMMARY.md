@@ -1,5 +1,4 @@
-* [トップページ](README.md)
-* [雨坂先生の復習用資料　表紙](https://teacheramesaka.github.io/studyfiles/)
-
+* [教員向け便利ファイル集　トップ](README.md)
+* [ウェブサイト全体のトップページへ](https://teacheramesaka.github.io/studyfiles/)
 -----
 * [小テスト労力削減プロジェクト](googleforquiz.md)
